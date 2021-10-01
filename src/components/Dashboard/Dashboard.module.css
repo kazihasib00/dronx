@@ -1,0 +1,25 @@
+.appbar {
+  min-height: 10vh;
+  padding: 1rem;
+  background-color: #1c1b20;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: 'Gemunu Libre', sans-serif;
+  color: #7ed857;
+}
+
+.personal-details {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1.3rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-tracks: center;
+  margin-top: 2rem;
+}
