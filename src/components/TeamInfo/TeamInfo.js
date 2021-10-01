@@ -10,7 +10,7 @@ const TeamInfo = () => {
           backgroundImage: `url(${process.env.PUBLIC_URL + '/image/team.png'})`,
           height: '100vh',
           width: '100%',
-          backgroundSize: '80%',
+          backgroundSize: '70%',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
           marginTop: '3rem',
