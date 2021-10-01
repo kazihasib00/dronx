@@ -61,7 +61,11 @@ const Problems = () => {
       <div className={styles.title}>Major Problems in Urban Areas</div>
 
       <Box
-        sx={{ bgcolor: 'background.paper', width: '100%', marginTop: '3rem' }}
+        sx={{
+          bgcolor: 'background.paper',
+          width: '100%',
+          marginTop: '2rem',
+        }}
       >
         <AppBar position="static">
           <Tabs
@@ -81,15 +85,39 @@ const Problems = () => {
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={value}
           onChangeIndex={handleChangeIndex}
+          style={{
+            height: '100vh',
+          }}
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
-            Item One
+            <div className={styles.image}>
+              <img
+                src="/image/traffic.jpg"
+                alt="Traffic jam"
+                width={800}
+                height={500}
+              />
+            </div>
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
-            Item Two
+            <div className={styles.image}>
+              <img
+                src="/image/urban.jpg"
+                alt="Flood"
+                width={800}
+                height={500}
+              />
+            </div>
           </TabPanel>
           <TabPanel value={value} index={2} dir={theme.direction}>
-            Item Three
+            <div className={styles.image}>
+              <img
+                src="/image/flood.jpg"
+                alt="Flood"
+                width={800}
+                height={500}
+              />
+            </div>
           </TabPanel>
         </SwipeableViews>
       </Box>
