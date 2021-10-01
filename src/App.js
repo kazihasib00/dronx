@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import TeamInfo from './components/TeamInfo/TeamInfo'
 import Problems from './components/Problems/Problems'
 import Dashboard from './components/Dashboard/Dashboard'
+import Nasa from './components/Nasa/Nasa'
 
 import './App.css'
 
@@ -24,6 +25,10 @@ export default function App() {
 
       <section>
         <Dashboard />
+      </section>
+
+      <section>
+        <Nasa />
       </section>
     </div>
   )

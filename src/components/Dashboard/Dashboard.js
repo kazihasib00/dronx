@@ -69,7 +69,7 @@ const Dashboard = () => {
           component="form"
           sx={{
             '& > :not(style)': { m: 1, width: '25ch' },
-            marginTop: '1rem',
+            marginTop: '.5rem',
           }}
           noValidate
           autoComplete="off"
@@ -100,6 +100,11 @@ const Dashboard = () => {
           />
         </Box>
 
+        <div style={{ marginTop: '.5rem' }}>
+          <div>Total Rescued: 78</div>
+          <div>Total Delivery: 131</div>
+        </div>
+
         <div className={styles.buttons}>
           <Button
             size="medium"
@@ -119,6 +124,16 @@ const Dashboard = () => {
           </Button>
         </div>
 
+        <div style={{ marginTop: '2rem' }}>
+          <iframe
+            width="700"
+            height="400"
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDlfOF61QqDtrG13oLTHiUZog1OCsxxWIk&q=Bashundhara,Dhaka"
+          ></iframe>
+        </div>
+
         <Snackbar
           open={open}
           autoHideDuration={6000}
@@ -129,6 +144,10 @@ const Dashboard = () => {
       </div>
     </div>
   )
+}
+
+function generateRandomInteger(min, max) {
+  return Math.floor(min + Math.random() * (max + 1 - min))
 }
 
 export default Dashboard

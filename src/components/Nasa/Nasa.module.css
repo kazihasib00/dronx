@@ -1,0 +1,15 @@
+.appbar {
+  min-height: 5vh;
+  padding: 0.5rem;
+  background-color: #1c1b20;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: 'Gemunu Libre', sans-serif;
+  color: #7ed857;
+}
+
+.map {
+  height: 92vh;
+}
