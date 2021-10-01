@@ -62,7 +62,7 @@ const Problems = () => {
 
       <Box
         sx={{
-          bgcolor: 'background.paper',
+          bgcolor: '#1c1b20',
           width: '100%',
           marginTop: '2rem',
         }}
@@ -85,9 +85,6 @@ const Problems = () => {
           axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
           index={value}
           onChangeIndex={handleChangeIndex}
-          style={{
-            height: '100vh',
-          }}
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className={styles.image}>

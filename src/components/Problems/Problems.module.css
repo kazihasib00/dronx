@@ -1,7 +1,7 @@
 .title {
   font-size: 3rem;
   font-family: 'Gemunu Libre', sans-serif;
-  color: white;
+  color: #7ed857;
 }
 
 .wrapper {
@@ -12,4 +12,8 @@
   padding: 1rem 0;
   background-color: #1c1b20;
   height: 100vh;
+}
+
+.image {
+  margin: 1rem;
 }
